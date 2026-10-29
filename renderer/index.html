@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: file:; media-src 'self' file: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+<title>OfflineCraft</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="app">
+  <div id="bg"></div>
+  <header id="titlebar">
+    <div class="brand"><img class="logo" src="logo.png" alt=""><span>OfflineCraft</span></div>
+    <div class="grow"></div>
+    <div id="acct" class="nodrag"></div>
+    <div class="winbtns nodrag">
+      <button data-act="min" title="Minimize"><svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg></button>
+      <button data-act="max" title="Maximize" id="maxbtn"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1"/></svg></button>
+      <button data-act="close" class="close" title="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </header>
+  <div id="body">
+    <nav id="side"><div id="navind"></div><div id="navitems"></div></nav>
+    <main id="main"></main>
+  </div>
+  <div id="tooltip"></div><div id="drawer"></div><div id="lightbox"></div><div id="jobs"></div><div id="toasts"></div><div id="popover"></div><div id="modal"></div>
+  <div id="outline"></div>
+</div>
+<script src="skin3d.js"></script>
+<script src="app.js"></script>
+<script src="servers.js"></script>
+</body></html>
